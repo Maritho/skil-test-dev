@@ -54,7 +54,7 @@ npm run dev
 
 ### 7. Akses
 - Frontend: http://localhost:3000
-- Backend: http://localhost:4000
+- Backend: http://localhost:8000
 
 ### Menjalankan Migration & Seed di Docker
 
