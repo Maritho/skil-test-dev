@@ -46,15 +46,15 @@ export default function Login() {
   return (
     <div className="h-screen flex items-center">
       <div className="container mx-auto">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="flex gap-[130px] items-center">
             <img src="/images/login.png" alt="Logo" className="w-[500px] h-fit" />
-            <div className="flex flex-col shadow-[0_0_4px_0_#00000014] p-16 rounded-[8px] bg-white w-full">
+            <div className="flex flex-col shadow-[0_0_4px_0_#00000014] p-8 rounded-[8px] bg-white w-full">
               <div className="flex flex-col">
                 <span className="text-[36px]">Welcome to</span>
                 <h1 className="text-[#6358DC] text-[46px] font-[900]">BIGFORUM</h1>
               </div>
-              <form onSubmit={loginHandler} className="my-[100]">
+              <form onSubmit={loginHandler} className="my-[50]">
                 <div className="flex flex-col gap-6">
                   <div className="flex flex-col">
                     <InputGroup value={email} onChange={(e) => setEmail(e.target.value)} icon="mdi:email" title="Email" placeholder="example@gmail.com" type="email" />

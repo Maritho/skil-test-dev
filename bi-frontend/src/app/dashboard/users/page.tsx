@@ -169,10 +169,10 @@ export default function Users() {
         <div className="flex gap-8">
 
             <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} title="Create an account">
-                <div className="my-[40] mx-[40px]">
+                <div className="my-[20] mx-[20px]">
                     <form onSubmit={userHandler} className="flex flex-col rounded-[8px] bg-white w-full">
                         <div className="my-[40] mx-[40px]">
-                            <div className="flex flex-col gap-6">
+                            <div className="flex flex-col gap-2">
                                 <div className="flex flex-col">
                                     <Input value={firstName} onChange={(e) => setfirstName(e.target.value)} title="First Name" type="text" />
                                     {isSubmitting && firstName === "" && <span className="text-red-500 text-sm mt-1">First Name is required</span>}
@@ -245,7 +245,7 @@ export default function Users() {
                         <option value="user">User</option>
                     </select>
                     <div className="relative w-full">
-                        <input value={search} onChange={(e) => setSearch(e.target.value)} type="text" className="rounded-md py-2 px-4 pl-10 w-full outline-none" placeholder="Search for a student by name or email" />
+                        <input value={search} onChange={(e) => setSearch(e.target.value)} type="text" className="rounded-md py-2 px-4 pl-10 w-full outline-none" placeholder="Search for a users by name or email" />
                         <Icon icon="mdi:magnify" fontSize={24} className="absolute top-1/2 left-3 -translate-y-1/2 text-[#ACACAC]" />
                     </div>
                 </div>

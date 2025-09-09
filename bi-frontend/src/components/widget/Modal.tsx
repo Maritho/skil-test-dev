@@ -17,7 +17,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, title }) => {
             onClick={onClose}
         >
             <div
-            className="bg-white p-6 rounded-lg min-w-[300px] max-w-[90vw] shadow-lg relative"
+            className="bg-white p-4 rounded-lg min-w-[300px] max-w-[90vw] shadow-lg relative"
             onClick={e => e.stopPropagation()}
             >
             {title && (

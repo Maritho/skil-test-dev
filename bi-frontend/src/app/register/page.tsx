@@ -41,15 +41,15 @@ export default function Register() {
     return (
         <div className="h-screen flex items-center">
             <div className="container mx-auto">
-                <div className="max-w-7xl mx-auto">
+                <div className="max-w-6xl mx-auto">
                     <div className="flex gap-[130px] items-center">
                         <img src="/images/register.png" alt="Logo" className="w-[500px] h-fit" />
-                        <form onSubmit={registerHandler} className="flex flex-col shadow-[0_0_4px_0_#00000014] p-16 rounded-[8px] bg-white w-full">
+                        <form onSubmit={registerHandler} className="flex flex-col shadow-[0_0_4px_0_#00000014] p-8 rounded-[8px] bg-white w-full">
                             <div className="flex flex-col">
                                 <h1 className="text-[36px]">Create an account</h1>
                             </div>
-                            <div className="my-[40] mx-[40px]">
-                                <div className="flex flex-col gap-6">
+                            <div className="my-[20] mx-[40px]">
+                                <div className="flex flex-col gap-2">
                                     <div className="flex flex-col">
                                         <Input value={firstName} onChange={(e) => setfirstName(e.target.value)} title="First Name" type="text" />
                                         {isSubmitting && firstName === "" && <span className="text-red-500 text-sm mt-1">First Name is required</span>}
@@ -76,7 +76,7 @@ export default function Register() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="mt-8">
+                            <div className="mt-4">
                                 <button type="submit" className="bg-indigo-500 text-white w-full h-[56px] rounded-[12px] font-bold text-[20px] hover:bg-indigo-600 transition duration-300">Register</button>
                             </div>
                         </form>
